@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlarmSet">
+
+
+
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/help"
+            tools:context=".AlarmSet"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="68dp">
+
+            <TimePicker
+                android:id="@+id/alarmTimePicker"
+                android:layout_width="300dp"
+                android:layout_height="350dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="14dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginRight="14dp"
+                android:layout_marginLeft="31dp" />
+
+
+            <ToggleButton
+                android:id="@+id/alarmToggle"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/alarmTimePicker"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="casual"
+                android:onClick="onToggleClicked"
+                android:text="Alarm On/Off"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/alarmTimePicker"
+                android:layout_marginLeft="100dp" />
+
+            <TextView
+                android:id="@+id/alarmText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/alarmToggle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="148dp"
+                android:layout_marginStart="193dp"
+                android:layout_marginTop="48dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/alarmToggle"
+                android:layout_marginRight="148dp"
+                android:layout_marginLeft="193dp" />
+        </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="520dp"
+                android:background="@drawable/help"
+                tools:layout_editor_absoluteX="6dp"
+                tools:layout_editor_absoluteY="68dp">
+
+                <TimePicker
+                    android:id="@+id/alarmTimePicker1"
+                    android:layout_width="300dp"
+                    android:layout_height="350dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginStart="31dp"
+                    android:layout_marginTop="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginLeft="31dp" />
+
+
+                <ToggleButton
+                    android:id="@+id/alarmToggle1"
+                    android:layout_width="156dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/alarmTimePicker1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="casual"
+                    android:onClick="onToggleClicked1"
+                    android:text="Alarm On/Off"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/alarmTimePicker1"
+                    android:layout_marginLeft="100dp" />
+
+                <TextView
+                    android:id="@+id/alarmText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/alarmToggle1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="148dp"
+                    android:layout_marginStart="193dp"
+                    android:layout_marginTop="48dp"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/alarmToggle1"
+                    android:layout_marginLeft="193dp"
+                    android:layout_marginRight="148dp" />
+            </android.support.constraint.ConstraintLayout>
+
+
+
+</RelativeLayout>
+    </ScrollView>
